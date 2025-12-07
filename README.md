@@ -42,15 +42,6 @@ The website consists of the following pages:
 2. All pages are linked through the navigation menu
 3. CSS styling is in `styles.css`
 
-### Google Sites Integration
-
-To adapt this for Google Sites:
-
-1. Copy the content from each HTML file
-2. Paste into Google Sites pages
-3. Apply Google Sites styling or maintain custom CSS
-4. Update navigation links to match Google Sites page URLs
-
 ### Customization
 
 - **Colors**: Modify CSS variables in `styles.css` to change the color scheme
@@ -74,22 +65,6 @@ Chinese Website/
 ├── styles.css              # Main stylesheet
 └── README.md               # This file
 ```
-
-## Content Notes
-
-- All content is based on the progress report outline provided
-- Pages include placeholders for images, maps, and archival documents
-- Bibliography section includes the three annotated sources from the progress report
-- Additional sources and resources can be added to the Resources page
-
-## Next Steps
-
-1. **Add Images**: Insert historical photos, maps, and archival documents (ensure proper attribution and copyright compliance)
-2. **Add Interactive Maps**: Integrate GIS maps using ArcGIS StoryMaps or Google Maps
-3. **Expand Content**: Add more detailed content based on research findings
-4. **Add Citations**: Include in-text citations and expand the bibliography
-5. **Accessibility**: Review and enhance accessibility features
-6. **Testing**: Test across different browsers and devices
 
 ## Project Information
 
