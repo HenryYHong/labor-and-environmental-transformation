@@ -1,0 +1,54 @@
+# Site Settings
+title: "Chinese Immigrants in California"
+subtitle: "Environmental and Social Histories, 1850s-Present"
+description: "Exploring how Chinese communities shaped and were shaped by land, water, labor, and environmental regulation"
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme Settings (using custom layouts)
+# theme: minima
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Immigration & Law
+    url: /immigration-law/
+  - title: Angel Island
+    url: /angel-island/
+  - title: Labor & Transformation
+    url: /labor-transformation/
+  - title: Delta Agriculture
+    url: /delta/
+  - title: Railroad Corridors
+    url: /railroad/
+  - title: Chinatowns
+    url: /chinatowns/
+  - title: Post-1965 Migration
+    url: /post-1965/
+  - title: Conclusion
+    url: /conclusion/
+  - title: Resources
+    url: /resources/
+
+# Author
+author:
+  name: "ESPM 50AC Student"
+  email: ""
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+

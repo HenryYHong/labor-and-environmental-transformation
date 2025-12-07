@@ -1,0 +1,199 @@
+// Hero Section
+.hero {
+    background: linear-gradient(135deg, $primary-red 0%, $dark-red 100%);
+    color: white;
+    padding: $spacing-unit * 4 $spacing-unit * 2;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: $spacing-unit * 3;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    
+    h1 {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: $spacing-unit;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    h2 {
+        color: $gold;
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-bottom: $spacing-unit;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+// Cards
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-unit * 1.5;
+    margin: $spacing-unit * 2 0;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: $spacing-unit * 1.5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid $primary-red;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        border-left-color: $gold;
+    }
+    
+    h3 {
+        margin-bottom: $spacing-unit * 0.5;
+        
+        a {
+            color: $primary-red;
+            font-size: 1.3rem;
+        }
+    }
+    
+    p {
+        color: $text-light;
+        font-size: 0.95rem;
+    }
+}
+
+// Image Placeholder
+.image-placeholder {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(135deg, rgba($gold, 0.1) 0%, rgba($primary-red, 0.05) 100%);
+    border: 3px dashed $primary-red;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-red;
+    font-style: italic;
+    margin: $spacing-unit * 2 auto;
+    text-align: center;
+    padding: $spacing-unit * 2;
+    
+    &::before {
+        content: '🖼️';
+        font-size: 3rem;
+        display: block;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+// Timeline
+.timeline {
+    position: relative;
+    padding-left: $spacing-unit * 2;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, $primary-red 0%, $gold 50%, $primary-red 100%);
+    }
+    
+    &-item {
+        position: relative;
+        padding-left: $spacing-unit * 2;
+        margin-bottom: $spacing-unit * 1.5;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: -0.6rem;
+            top: 0.3rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            background: radial-gradient(circle, $gold 0%, $primary-red 100%);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px $primary-red;
+        }
+    }
+    
+    .year {
+        font-weight: 700;
+        color: $primary-red;
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: $spacing-unit * 0.5;
+    }
+}
+
+// Map Regions
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $spacing-unit * 1.5;
+    margin: $spacing-unit * 2 0;
+}
+
+.map-region {
+    background: white;
+    padding: $spacing-unit * 1.5;
+    border-radius: 8px;
+    text-align: center;
+    border: 3px solid $gold;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        border-color: $primary-red;
+    }
+    
+    h3 {
+        color: $primary-red;
+        margin-bottom: $spacing-unit * 0.5;
+    }
+    
+    a {
+        display: inline-block;
+        margin-top: $spacing-unit * 0.5;
+        padding: 0.5rem 1rem;
+        background: $gold;
+        color: $primary-red;
+        border-radius: 4px;
+        font-weight: 600;
+        
+        &:hover {
+            background: $primary-red;
+            color: $gold;
+            text-decoration: none;
+        }
+    }
+}
+
+// Key Themes List
+.key-themes {
+    list-style: none;
+    margin-left: 0;
+    
+    li {
+        padding: $spacing-unit * 1.2;
+        margin-bottom: $spacing-unit;
+        background: rgba($gold, 0.1);
+        border-left: 5px solid $primary-red;
+        border-radius: 4px;
+        transition: transform 0.2s ease;
+        
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+}
+

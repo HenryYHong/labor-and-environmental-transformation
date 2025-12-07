@@ -1,0 +1,187 @@
+.wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 $spacing-unit * 1.5;
+}
+
+// Header
+.site-header {
+    background: linear-gradient(135deg, $primary-red 0%, $dark-red 100%);
+    border-bottom: 4px solid $gold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-unit * 1.5;
+    }
+}
+
+.site-title {
+    color: white;
+    text-decoration: none;
+    
+    &-main {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: $font-serif;
+    }
+    
+    &-sub {
+        display: block;
+        font-size: 0.9rem;
+        color: $gold;
+        font-weight: 400;
+    }
+}
+
+.site-nav {
+    .trigger {
+        display: flex;
+        gap: $spacing-unit;
+        flex-wrap: wrap;
+    }
+    
+    .page-link {
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        
+        &:hover, &.active {
+            background: $gold;
+            color: $primary-red;
+            text-decoration: none;
+        }
+    }
+    
+    .nav-trigger {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+}
+
+// Main Content
+.main-content {
+    padding: $spacing-unit * 3 0;
+    min-height: calc(100vh - 200px);
+}
+
+// Page Layout
+.page-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: $spacing-unit * 3;
+    margin-bottom: $spacing-unit * 2;
+}
+
+.page-header {
+    border-bottom: 3px solid $gold;
+    padding-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit * 2;
+    
+    .page-title {
+        font-size: 2.8rem;
+        color: $primary-red;
+        margin-bottom: $spacing-unit * 0.5;
+    }
+    
+    .page-subtitle {
+        font-size: 1.2rem;
+        color: $text-light;
+        font-style: italic;
+    }
+}
+
+.page-body {
+    h2 {
+        margin-top: $spacing-unit * 2;
+        padding-left: $spacing-unit;
+        border-left: 4px solid $gold;
+    }
+    
+    h3 {
+        margin-top: $spacing-unit * 1.5;
+        color: $text-dark;
+    }
+}
+
+// Footer
+.site-footer {
+    background: linear-gradient(135deg, $dark-red 0%, $primary-red 100%);
+    border-top: 4px solid $gold;
+    color: white;
+    padding: $spacing-unit * 2 0;
+    margin-top: $spacing-unit * 4;
+    
+    .footer-content {
+        text-align: center;
+    }
+    
+    .footer-text {
+        margin-bottom: $spacing-unit * 0.5;
+    }
+    
+    .footer-meta {
+        font-size: 0.9rem;
+        color: $gold;
+        margin-top: $spacing-unit;
+    }
+}
+
+// Responsive
+@media screen and (max-width: $on-laptop) {
+    .site-nav {
+        .nav-trigger {
+            display: block;
+            position: absolute;
+        }
+        
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        .trigger {
+            clear: both;
+            display: none;
+        }
+        
+        input ~ .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+        
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: $on-palm) {
+    .page-content {
+        padding: $spacing-unit * 2;
+    }
+    
+    .page-header .page-title {
+        font-size: 2rem;
+    }
+}
+
